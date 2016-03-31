@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.crm7demoproject.TransportActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/queryTrans_carNo"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/queryTrans_carNo"
+        android:inputType="textPersonName" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/queryTrans_C"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/queryTrans_query"
+        android:layout_alignLeft="@+id/queryTrans_endTime"
+        android:background="@android:drawable/edit_text"
+        android:ems="10"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:maxLines="7"
+        android:minLines="7"
+        android:scrollbars="vertical" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/queryTrans_carNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/queryTrans_carNo" />
+
+    <TextView
+        android:id="@+id/queryTrans_startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/queryTrans_carNo"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="25dp"
+        android:text="@string/queryTrans_startTime" />
+
+    <Button
+        android:id="@+id/queryTrans_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/queryTrans_C"
+        android:layout_below="@+id/queryTrans_C"
+        android:layout_marginRight="34dp"
+        android:text="@string/queryTrans_back"
+        android:onClick="queryTransBack" />
+
+    <Button
+        android:id="@+id/queryTrans_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/queryTrans_C"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="24dp"
+        android:text="@string/queryTrans_query"
+        android:onClick="queryTransQuery" />
+
+    <EditText
+        android:id="@+id/et_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/queryTrans_startTime"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/queryTrans_startTime" 
+        android:inputType="none"
+        />
+
+    <EditText
+        android:id="@+id/et_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/queryTrans_endTime"
+        android:layout_alignLeft="@+id/et_start_time"
+        android:layout_alignRight="@+id/et_start_time" 
+        android:inputType="none"
+        />
+
+    <TextView
+        android:id="@+id/queryTrans_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/queryTrans_startTime"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/et_end_time"
+        android:text="@string/queryTrans_endTime" />
+
+</RelativeLayout>

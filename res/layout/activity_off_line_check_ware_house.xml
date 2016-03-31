@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.crm7demoproject.OffLineCheckWareHouseActivity" >
+
+     <EditText
+         android:id="@+id/offLineCountInput"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:ems="10"
+         android:focusable="true"
+         android:focusableInTouchMode="false"
+         android:inputType="text"
+         android:hint="@string/offLineScanInput" />
+
+     <ListView
+         android:id="@+id/listView1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/offLineQuery"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/offLineCountInput"
+         android:divider="@android:color/darker_gray"
+         android:background="@drawable/view_border_style"
+          >
+
+     </ListView>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/offLineBack"
+         android:layout_alignBottom="@+id/offLineBack"
+         android:layout_centerHorizontal="true"
+         android:text="@string/detail"
+         android:onClick="detail" 
+         />
+
+     <Button
+         android:id="@+id/offLineBack"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/offLineQuery"
+         android:layout_alignBottom="@+id/offLineQuery"
+         android:layout_alignRight="@+id/listView1"
+         android:layout_marginRight="19dp"
+         android:onClick="offLineBack"
+         android:text="@string/offLineBack" />
+
+     <Button
+         android:id="@+id/offLineQuery"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="18dp"
+         android:onClick="offLineQuery"
+         android:text="@string/offLineQuery" />
+
+</RelativeLayout>

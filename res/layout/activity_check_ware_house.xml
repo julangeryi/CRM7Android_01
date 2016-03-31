@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.crm7demoproject.CheckWareHouseActivity" >
+
+    <Button
+        android:id="@+id/check_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="checkBack"
+        android:text="@string/check_back" />
+
+    <Button
+        android:id="@+id/check_wareBackup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/check_back"
+        android:layout_alignBottom="@+id/check_back"
+        android:onClick="checkWareBackup"
+        android:text="@string/check_wareBackup" />
+
+    <EditText
+        android:id="@+id/out_queryInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/check_back"
+        android:layout_alignLeft="@+id/check_wareBackup"
+        android:background="@android:drawable/edit_text"
+        android:ems="10"
+        android:enabled="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLines="6"
+        android:minLines="6"
+        android:scrollbars="vertical" >
+    </EditText>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/out_queryInfo"
+        android:layout_alignLeft="@+id/out_queryInfo"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/out_queryInfo"
+        android:columnCount="1" >
+
+        <EditText
+            android:id="@+id/check_WareScanInput"
+            android:layout_width="169dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:hint="@string/check_WareScanInput"
+            android:focusableInTouchMode="true" 
+            android:inputType="textPersonName" />
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/check_count"
+            android:layout_width="109dp"
+            android:layout_column="0"
+            android:layout_gravity="right|top"
+            android:layout_row="0"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:layout_column="0"
+            android:layout_gravity="left|bottom"
+            android:layout_row="0" >
+
+            <LinearLayout
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.03"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/check_wareHouseSpinner1"
+                    android:layout_width="168dp"
+                    android:layout_height="48dp" />
+
+                <Spinner
+                    android:id="@+id/check_anlageSpinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="115dp"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/check_rawSpinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp" />
+
+                <Spinner
+                    android:id="@+id/check_columnSpinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <Spinner
+                    android:id="@+id/check_layerSpinner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </GridLayout>
+
+</RelativeLayout>

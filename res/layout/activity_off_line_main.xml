@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.crm7demoproject.OffLineMainActivity" >
+
+    <Button
+        android:id="@+id/offLine_queryTransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/offLine_clearData"
+        android:layout_alignRight="@+id/offLine_upLoadData"
+        android:text="@string/offLine_queryTransport"
+        android:onClick="offLineQueryTransport" />
+
+    <Button
+        android:id="@+id/offLine_upLoadData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/offLine_clearData"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@+id/offLine_clearData"
+        android:text="@string/offLine_upLoadData" 
+        android:onClick="offLineUpLoadData"/>
+
+    <Button
+        android:id="@+id/offLine_queryCheckWareHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/offLine_clearData"
+        android:layout_below="@+id/offLine_clearData"
+        android:layout_marginTop="52dp"
+        android:text="@string/offLine_queryCheckWareHouse" 
+        android:onClick="offLineCheckWareHouseQuery"/>
+
+    <Button
+        android:id="@+id/offLine_checkWareHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/offLine_checkWareHouse" 
+        android:onClick="offLineCheckWareHouse"/>
+
+    <Button
+        android:id="@+id/offLine_clearData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/offLine_checkWareHouse"
+        android:layout_below="@+id/offLine_checkWareHouse"
+        android:layout_marginTop="61dp"
+        android:text="@string/offLine_clearData" 
+        android:onClick="offLineClearData"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/offLine_queryCheckWareHouse"
+        android:layout_alignBottom="@+id/offLine_queryCheckWareHouse"
+        android:layout_alignLeft="@+id/offLine_queryTransport"
+        android:onClick="offLineExport"
+        android:text="@string/offLineExport" />
+
+</RelativeLayout>

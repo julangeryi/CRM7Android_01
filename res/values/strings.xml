@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">不锈冷轧厂手持系统</string>
+    <string name="app_login">&#160;&#160;&#160;不锈冷轧厂手持系统登陆界面</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Login -->
+    <string name="username">用户名</string>
+    <string name="login">在线登陆</string>
+    <string name="reset">输入重置</string>
+    <string name="userNameInfo">请输入用户名</string>
+    <string name="userPassInfo">请输入密码</string>
+    <string name="offLineLogin">离线登陆</string>
+    <string name="exit">退出应用</string>
+
+    <!-- Main -->
+    <string name="inWareHouse">入库</string>
+    <string name="outWareHouse">出库</string>
+    <string name="queryWareHouse">转运信息查询</string>
+    <string name="checkWareHouse">盘库</string>
+    <string name="getMat">获取物料信息</string>
+    <string name="matStateQuery">物料状态查询</string>
+
+    <!-- GetMatInfo -->
+    <string name="wareHouse">库位</string>
+    <string name="productLine">产线</string>
+    <string name="back">返回</string>
+
+    <!-- InWareHouse prex="in_" -->
+    <string name="in_WarePositon">库位</string>
+    <string name="in_WareRow">行</string>
+    <string name="in_WareColumn">列</string>
+    <string name="in_WareLayer">层</string>
+    <string name="turnToMetering">转到计量</string>
+    <string name="in_wareBack">返回</string>
+    <string name="in_ware">入库</string>
+    <string name="in_scan_input">扫描框</string>
+
+    <!-- MatStateQuery prex="mat_" -->
+    <string name="mat_steelGradeNum">钢卷号</string>
+    <string name="mat_back">返回</string>
+    <string name="mat_clear">钢卷号清空</string>
+
+    <!-- MatInfoQuery prex="matInfo_" -->
+    <string name="matInfo_wareHouse">库位</string>
+    <string name="matInfo_productLine">产线</string>
+    <string name="matInfo_steelGradeID">钢卷号</string>
+    <string name="matInfo_row">行</string>
+    <string name="matInfo_column">列</string>
+    <string name="matInfo_layer">层</string>
+    <string name="matInfo_back">返回</string>
+    <string name="matInfo_query">查询</string>
+
+    <!-- OutWareHouse prex="out_" -->
+    <string name="out_back">返回</string>
+    <string name="out_carNum">车&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号</string>
+    <string name="out_driverCard">司机卡号</string>
+    <string name="out_wareHouse">出库</string>
+    <string name="out_inputText">扫描输入框</string>
+
+    <!-- Query prex="query_" -->
+    <string name="query_matIno">物料信息查询</string>
+    <string name="query_transport">转运信息查询</string>
+    <string name="query_back">返回</string>
+
+    <!-- Query2Transport prex="queryTrans_" -->
+    <string name="queryTrans_carNo">车&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号</string>
+    <string name="queryTrans_startTime">起始日期</string>
+    <string name="queryTrans_endTime">截止日期</string>
+    <string name="queryTrans_query">查询</string>
+    <string name="queryTrans_back">返回</string>
+
+    <!-- CheckWareHouse prex="check_" -->
+    <string name="check_wareposition">库位</string>
+    <string name="check_wareBackup">盘库查询</string>
+    <string name="check_back">返回</string>
+    <string name="check_WareScanInput">&#160;&#160;&#160;&#160;&#160;&#160;&#160;扫描条码</string>
+
+    <!-- Offline -->
+    <string name="offLine_checkWareHouse">盘&#160;&#160;&#160;&#160;&#160;&#160;&#160;库</string>
+    <string name="offLine_upLoadData">上传数据</string>
+    <string name="offLine_clearData">清空数据</string>
+    <string name="offLine_queryTransport">转运查询</string>
+    <string name="offLine_queryCheckWareHouse">盘库查询</string>
+    <string name="offLine_back">返&#160;&#160;&#160;&#160;&#160;&#160;&#160;回</string>
+    <string name="offLineCount">数量</string>
+    <string name="offLineQuery">总数查询</string>
+    <string name="offLineBack">返回</string>
+    <string name="offLineScanInput">扫描输入框</string>
+    <string name="offLineExport">导出Excel</string>
+    <string name="detail">所有信息</string>
+
+    <!-- Information -->
+    <string name="errorOfLogin">用户名或密码错误</string>
+    <string name="title_activity_main">不锈冷轧厂手持作业系统</string>
+    <string name="title_activity_http_test">HttpTestActivity</string>
+    <string name="title_activity_get_mat_info">获取物料信息</string>
+    <string name="title_activity_drop">DropActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_in_ware_house">入库操作界面</string>
+    <string name="title_activity_mat_state_query">物料状态查询</string>
+    <string name="title_activity_mat_info_query">获取物料</string>
+    <string name="title_activity_out_ware_house">出库</string>
+    <string name="title_activity_query">查询主界面</string>
+    <string name="title_activity_transport">转运信息查询</string>
+    <string name="title_activity_check_ware_house">盘库</string>
+    <string name="title_activity_off_line_main">离线手持系统</string>
+    <string name="title_activity_off_line_check_ware_house">盘库信息查询</string>
+    
+    <!-- Dialog -->
+    <string name="dialog_title">操作提示</string>
+    <string name="dialog_msg">该钢卷在系统中不存在，需要从MES系统放入本系统吗？</string>
+    <string name="dialog_exit">退出</string>
+    <string name="dialog_back">返回</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_off_clear">清空数据</string>
+
+</resources>
